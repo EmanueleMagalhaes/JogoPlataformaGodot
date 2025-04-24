@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw636gdarqkvn"]
+
+[ext_resource type="Script" path="res://cenas/player/player.gd" id="1_g2621"]
+[ext_resource type="Texture2D" uid="uid://lk6xddj2rold" path="res://Assets/player/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_s4lac"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnyef"]
+size = Vector2(12, 22)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_g2621")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_qnyef")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -13)
+texture = ExtResource("1_s4lac")
